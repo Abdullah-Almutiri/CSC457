@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Abdullah Almutairi</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, main, footer { padding: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    nav a:hover { text-decoration: underline; }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    label { margin-top: 10px; }
+    input, textarea { padding: 8px; font-size: 1em; }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover { background-color: #45a049; }
+  </style>
+</head>
+<body id="top">
+  <!-- Header -->
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav role="navigation">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Form -->
+    <form action="mailto:a.almutairi@ksu.edu.sa" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Alternate Contact Link -->
+    <p>
+      Alternatively, you can email me directly at 
+      <a href="mailto:a.almutairi@ksu.edu.sa">aloqile1@gmail.com</a>.
+    </p>
+
+    <!-- Back to Top -->
+    <p><a href="#top">Back to Top</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Abdullah Almutairi</p>
+  </footer>
+</body>
+</html>
